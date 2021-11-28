@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "module": "commonjs",
+    "declaration": false,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "target": "ES2020",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "types": ["node"],
+    "incremental": true
+  },
+  "exclude": ["node_modules", "dist"]
+}

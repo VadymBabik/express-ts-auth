@@ -1,9 +1,11 @@
 import { Router } from "express";
-import {login, registration} from "./auth.controler";
+import { login, logout, refresh, registration } from "./auth.controler";
 
 const route = Router();
 export default function (root) {
-    root.use("/auth", route);
-    route.get("/login", login);
-    route.post("/registration", registration);
+  root.use("/auth", route);
+  route.post("/login", login);
+  route.post("/logout", logout);
+  route.post("/registration", registration);
+  route.get("/refresh", refresh);
 }
